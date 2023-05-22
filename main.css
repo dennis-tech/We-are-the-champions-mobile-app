@@ -1,0 +1,72 @@
+html, body{
+    background-color: #1b1924;
+    margin: 0;
+    padding: 0;  
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    text-align: center;
+    margin: 10px auto;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+}
+img{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+}
+h1{
+    color: #fff;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 20px 20px 0 0;
+}
+h2{
+    color: #fff;
+    font-size: 25px;
+    margin: 20px 10px 0 0;
+}
+#endorseInputField{
+    font-family: 'Inter', sans-serif;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    height: 120px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #444059;
+}
+button{
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    color: #04131C;
+    background-color: #28A9F1;
+    cursor: pointer;
+    font-weight: bold;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ul li{
+    margin: 10px auto;
+    padding: 20px;
+    flex-grow: 1;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    text-align: left;
+    font-size: 18px;
+    color: #1B1924;
+    background-color: #FFFFFF;
+}
+
