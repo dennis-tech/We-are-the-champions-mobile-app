@@ -1,10 +1,11 @@
 html, body{
     background-color: #1b1924;
     margin: 0;
-    padding: 0;  
+    padding: 0;
+    user-select: none;  
 }
+/* container - div */
 .container{
-    display: flex;
     flex-direction: column;
     max-width: 400px;
     text-align: center;
@@ -12,53 +13,74 @@ html, body{
     font-family: 'Inter', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
 }
+/* freddie img */
 img{
     width: 150px;
     height: 150px;
     margin: 0 auto;
 }
+/* we are the champions */
 h1{
-    color: #fff;
     font-size: 35px;
-    font-weight: bold;
-    margin: 20px 20px 0 0;
+    margin: 10px auto;
 }
+/* endorsements */
 h2{
-    color: #fff;
     font-size: 25px;
     margin: 20px 10px 0 0;
 }
+h1, h2 {
+    color: #fff;
+}
 #endorseInputField{
-    font-family: 'Inter', sans-serif;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 10px;
-    border: none;
+    margin: 10px 0 5px 0;
     height: 120px;
-    font-size: 18px;
+}
+#inputTo, #endorseInputField, #inputFrom {
+    font-family: 'Inter';
     color: #fff;
     background-color: #444059;
+    font-size: 18px;
 }
-button{
-    margin: 10px 0;
+#inputTo, #inputFrom {
+    padding: 20px;
+    margin: 5px auto;
+    max-width: 152px;
+    text-align: center;
+}
+#inputFrom{
+    margin-right: 10px;
+}
+#endorseInputField, button {
     padding: 15px;
+}
+#inputTo, #endorseInputField, #inputFrom#inputTo, #endorseInputField, #inputFrom, button {
     border-radius: 10px;
     border: none;
-    font-size: 18px;
+}
+h1, button {
+    font-weight: bold;
+}
+/* publish btn */
+button{
+    margin: 5px 0 0 0;  
+    font-size: 22px;
     color: #04131C;
     background-color: #28A9F1;
     cursor: pointer;
-    font-weight: bold;
 }
+.container, ul {
+    display: flex;
+}
+/* ul items */
 ul {
     list-style-type: none;
     padding: 0;
-    display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
-
-ul li{
+/* ul li items */
+ul li, .noEndorse{
     margin: 10px auto;
     padding: 20px;
     flex-grow: 1;
@@ -68,5 +90,15 @@ ul li{
     font-size: 18px;
     color: #1B1924;
     background-color: #FFFFFF;
+}
+
+.endorseValueTo,.endorseValueFrom {
+    font-family: 'Inter', sans-serif;
+    color: #1B1924;
+    font-weight: bold;
+    font-size: 18px;
+}
+.fa fa-heart{
+    font-size:36px;
 }
 
