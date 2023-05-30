@@ -5,11 +5,13 @@ const appSettings = {
     databaseURL: "https://realtime-database-46bf3-default-rtdb.firebaseio.com/"
 }
 //database
+
 const app = initializeApp(appSettings);
 const database = getDatabase(app);
 const endorseListInDB = ref(database, 'endorseList');
 
 //from html
+
 const endorseInputEl = document.getElementById("endorseInputField");
 const inputFromEl = document.getElementById("inputFrom");
 const inputToEl = document.getElementById("inputTo");
@@ -17,6 +19,7 @@ const publishBtnEl = document.getElementById("publishBtn");
 const endorseListEl = document.getElementById("endorseList");
 
 //publish btn function
+
 publishBtnEl.addEventListener("click", function() {
     const endorseInput = endorseInputEl.value;
     const inputFrom = inputFromEl.value;
@@ -27,10 +30,12 @@ publishBtnEl.addEventListener("click", function() {
         clearEndorseInputEl();
     }
 })
+
 // displaying the endorsements
+
 onValue(endorseListInDB, (snapshot) => {
     if(snapshot.exists()){
-        let endorseList = Object.entries(snapshot.val());
+        let endorseList = Object.entries(snapshot.val()).reverse ();
         clearEndorseListEl();
         
         for(let i = 0; i < endorseList.length; i++){
@@ -44,14 +49,16 @@ onValue(endorseListInDB, (snapshot) => {
     }
 });
 
-// clear endorse list function
+
+
 function clearEndorseListEl(){
     endorseListEl.innerHTML = '';
 }
 
 // appending the endorsements to the DOM
+
 function appendEndorseToDOM(endorse){
-    //let endorseID = endorse[0];
+    
     let endorseValueEndorse = endorse[1][0];
     let endorseValueFrom = endorse[1][1];
     let endorseValueTo = endorse[1][2];
@@ -66,7 +73,9 @@ function appendEndorseToDOM(endorse){
     `;
     endorseListEl.append(endorseEl);
 }
-// clear input function
+
+
+
 function clearEndorseInputEl() {
     endorseInputEl.value = "";
     inputFromEl.value = "";

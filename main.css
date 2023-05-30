@@ -1,10 +1,13 @@
-html, body{
+html, 
+body{
     background-color: #1b1924;
     margin: 0;
     padding: 0;
     user-select: none;  
 }
+
 /* container - div */
+
 .container{
     flex-direction: column;
     max-width: 400px;
@@ -13,55 +16,83 @@ html, body{
     font-family: 'Inter', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
 }
+
 /* freddie img */
+
 img{
     width: 150px;
     height: 150px;
     margin: 0 auto;
 }
+
 /* we are the champions */
+
 h1{
     font-size: 35px;
     margin: 10px auto;
 }
+
 /* endorsements */
+
 h2{
     font-size: 25px;
     margin: 20px 10px 0 0;
 }
-h1, h2 {
+
+h1, 
+h2 {
     color: #fff;
 }
+
 #endorseInputField{
     margin: 10px 0 5px 0;
     height: 120px;
 }
-#inputTo, #endorseInputField, #inputFrom {
+
+#inputTo, 
+#endorseInputField, 
+#inputFrom {
     font-family: 'Inter';
     color: #fff;
     background-color: #444059;
     font-size: 18px;
 }
-#inputTo, #inputFrom {
+
+#inputTo, 
+#inputFrom {
     padding: 20px;
     margin: 5px auto;
     max-width: 152px;
     text-align: center;
 }
+
 #inputFrom{
     margin-right: 10px;
 }
-#endorseInputField, button {
+
+#endorseInputField, 
+button {
     padding: 15px;
 }
-#inputTo, #endorseInputField, #inputFrom#inputTo, #endorseInputField, #inputFrom, button {
+
+
+#inputTo, 
+#endorseInputField, 
+#inputFrom#inputTo, 
+#endorseInputField, 
+#inputFrom, 
+button {
     border-radius: 10px;
     border: none;
 }
-h1, button {
+
+h1, 
+button {
     font-weight: bold;
 }
+
 /* publish btn */
+
 button{
     margin: 5px 0 0 0;  
     font-size: 22px;
@@ -69,18 +100,25 @@ button{
     background-color: #28A9F1;
     cursor: pointer;
 }
-.container, ul {
+
+.container,
+ul {
     display: flex;
 }
+
 /* ul items */
+
 ul {
     list-style-type: none;
     padding: 0;
     flex-wrap: wrap;
     gap: 10px;
 }
+
 /* ul li items */
-ul li, .noEndorse{
+
+ul li, 
+.noEndorse{
     margin: 10px auto;
     padding: 20px;
     flex-grow: 1;
@@ -92,12 +130,16 @@ ul li, .noEndorse{
     background-color: #FFFFFF;
 }
 
-.endorseValueTo,.endorseValueFrom {
+.endorseValueTo,
+.endorseValueFrom {
     font-family: 'Inter', sans-serif;
     color: #1B1924;
     font-weight: bold;
     font-size: 18px;
+    display: block;
+    margin: 15px 0;
 }
+
 .fa fa-heart{
     font-size:36px;
 }
