@@ -47,6 +47,7 @@ h2 {
 #endorseInputField{
     margin: 10px 0 5px 0;
     height: 120px;
+    resize: none;
 }
 
 #inputTo, 
